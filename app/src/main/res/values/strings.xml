@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Poly12</string>
+
+    <string-array name="Languages">
+        <item>Choose Language</item>
+        <item>中文 (Chinese)</item>
+        <item>हिंदी (Hindi)</item>
+        <item>Español (Spanish)</item>
+        <item> عربى (Arabic)</item>
+        <item>Português (Portuguese)</item>
+    </string-array>
+
+</resources>
