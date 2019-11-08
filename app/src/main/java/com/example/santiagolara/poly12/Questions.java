@@ -2,82 +2,64 @@ package com.example.santiagolara.poly12;
 
 public class Questions {
 
-    public String mQuestions[]= {
-            "Hello",
-            "Good morning",
-            "Good afternoon",
-            "Good evening/Good night",
-            "How are you? (informal)",
-            "How are you? (formal)",
-            "What’s happening?",
-            "I’m fine",
-            "Thanks",
-            "You’re welcome",
-            "Please",
-            "Good-bye",
-            "I’ll see you later"
-    };
+    private String question,option1,option2,option3,option4,answer;
 
-    private String mChoices[][] = {
-            {"Hola","¿Qué tal?","¿Cómo está usted?","Buenas noches",},
-            {"De nada","Por favor","Buenos días","Gracias",},
-            {"Buenas tardes","Adiós","Hola","Hasta luego",},
-            {"Por favor","Hasta luego","¿Qué tal?","Buenas noches",},
-            {"Buenas tardes","Buenos días","¿Cómo estás tú?","Adiós",},
-            {"Hasta luego","Hola","Buenas noches","¿Cómo está usted?",},
-            {"Buenos días","¿Qué tal?","Buenas tardes","¿Qué tal?",},
-            {"Estoy bien","Buenos días","¿Qué tal?","Hasta luego",},
-            {"¿Cómo estás tú?","Hasta luego","Gracias","Buenas tardes",},
-            {"De nada","Hasta luego","Hola","¿Qué tal?",},
-            {"¿Qué tal?","Buenas tardes","Por favor","Estoy bien",},
-            {"¿Qué tal?","Buenos días","Hasta luego","Adiós",},
-            {"Hasta luego","Hola","¿Cómo estás tú?","Buenas tardes",},
-    };
+    public Questions(String question, String option1, String option2, String option3, String option4, String answer) {
+        this.question = question;
+        this.option1 = option1;
+        this.option2 = option2;
+        this.option3 = option3;
+        this.option4 = option4;
+        this.answer = answer;
+    }
 
-    private String mCorrectAnswers[] = {
-            "Hola",
-            "Buenos días",
-            "Buenas tardes",
-            "Buenas noches",
-            "¿Cómo estás tú?",
-            "¿Cómo está usted?",
-            "¿Qué tal?",
-            "Estoy bien",
-            "Gracias",
-            "De nada",
-            "Por favor",
-            "Adiós",
-            "Hasta luego",
+    public Questions(){}
 
-    };
-
-    public String getQuestion(int a){
-        String question = mQuestions[a];
+    public String getQuestion() {
         return question;
     }
 
-    public String getChoice1(int a){
-        String choice = mChoices[a][0];
-        return choice;
+    public void setQuestion(String question) {
+        this.question = question;
     }
 
-    public String getChoice2(int a){
-        String choice = mChoices[a][1];
-        return choice;
+    public String getOption1() {
+        return option1;
     }
 
-    public String getChoice3(int a){
-        String choice = mChoices[a][2];
-        return choice;
+    public void setOption1(String option1) {
+        this.option1 = option1;
     }
 
-    public String getChoice4(int a){
-        String choice = mChoices[a][3];
-        return choice;
+    public String getOption2() {
+        return option2;
     }
 
-    public String getCorrectAnswer(int a){
-        String answer = mCorrectAnswers[a];
+    public void setOption2(String option2) {
+        this.option2 = option2;
+    }
+
+    public String getOption3() {
+        return option3;
+    }
+
+    public void setOption3(String option3) {
+        this.option3 = option3;
+    }
+
+    public String getOption4() {
+        return option4;
+    }
+
+    public void setOption4(String option4) {
+        this.option4 = option4;
+    }
+
+    public String getAnswer() {
         return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 }
