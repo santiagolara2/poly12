@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "630605022981",
+    "firebase_url": "https://poly12-9c7fb.firebaseio.com",
+    "project_id": "poly12-9c7fb",
+    "storage_bucket": "poly12-9c7fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630605022981:android:8437c0b8a869b7ae33596c",
+        "android_client_info": {
+          "package_name": "com.example.santiagolara.poly12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630605022981-e3nuleqcljjfbsdtvpombpdqnoo690lh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.santiagolara.poly12",
+            "certificate_hash": "8ac39891386a8a5ae0cf13fc0522d4941a82dd16"
+          }
+        },
+        {
+          "client_id": "630605022981-mvqn0jo2ilhk31v3m48qjfo0uh9ncu8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU_EtSA6abj9AkfIACtJiQ2fRtVarnvSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630605022981-mvqn0jo2ilhk31v3m48qjfo0uh9ncu8b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
