@@ -12,13 +12,14 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
     int currentItem = 0;
+    public static final String LANGUAGE_NAME = "com.example.santiagolara.poly12";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
+        final Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,
             android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Languages));
@@ -32,7 +33,9 @@ public class MainActivity extends AppCompatActivity {
                 if(currentItem==position) {
                     return; //do nothing
                 }else{
+                    String language = mySpinner.getSelectedItem().toString();
                     Intent intent =  new Intent(MainActivity.this,Main2Activity.class);
+                    intent.putExtra(LANGUAGE_NAME, language);
                     startActivity(intent);
                 }
             }

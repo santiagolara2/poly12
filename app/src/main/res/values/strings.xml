@@ -9,5 +9,6 @@
         <item> عربى (Arabic)</item>
         <item>Português (Portuguese)</item>
     </string-array>
+    <string name="title_activity_language_intro">LanguageIntroActivity</string>
 
 </resources>
