@@ -10,18 +10,18 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
-public class MainActivity extends AppCompatActivity {
+public class SelectLanguageActivity extends AppCompatActivity {
     int currentItem = 0;
     public static final String LANGUAGE_NAME = "com.example.santiagolara.poly12";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_select_language);
 
         final Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
 
-        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,
+        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(SelectLanguageActivity.this,
             android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Languages));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(myAdapter);
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     return; //do nothing
                 }else{
                     String language = mySpinner.getSelectedItem().toString();
-                    Intent intent =  new Intent(MainActivity.this,Main2Activity.class);
+                    Intent intent =  new Intent(SelectLanguageActivity.this,Select_SpanishActivity.class);
                     intent.putExtra(LANGUAGE_NAME, language);
                     startActivity(intent);
                 }

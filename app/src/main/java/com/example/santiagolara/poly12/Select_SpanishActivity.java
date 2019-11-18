@@ -6,15 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Main2Activity extends AppCompatActivity {
+public class Select_SpanishActivity extends AppCompatActivity {
     public static final String LANGUAGE_NAME = "com.example.santiagolara.poly12";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_start_spanish);
 
         Intent intent = getIntent();
-        final String language = intent.getStringExtra(MainActivity.LANGUAGE_NAME);
+        final String language = intent.getStringExtra(SelectLanguageActivity.LANGUAGE_NAME);
 
         Button newLanguage = (Button) findViewById(R.id.newLanguage);
         newLanguage.setText("New to " + language +"?");
@@ -22,7 +22,7 @@ public class Main2Activity extends AppCompatActivity {
         newLanguage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Main2Activity.this, LanguageIntroActivity.class);
+                Intent intent = new Intent(Select_SpanishActivity.this, LanguageIntroActivity.class);
                 intent.putExtra(LANGUAGE_NAME, language);
                 startActivity(intent);
             }
@@ -40,7 +40,7 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     public void openMain3Activity() {
-        Intent intent = new Intent(this, Main3Activity.class);
+        Intent intent = new Intent(this, SpanishTest_BasicActivity.class);
         startActivity(intent);
     }
 }

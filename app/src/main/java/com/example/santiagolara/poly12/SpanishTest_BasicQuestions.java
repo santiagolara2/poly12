@@ -1,6 +1,6 @@
 package com.example.santiagolara.poly12;
 
-public class Questions {
+public class SpanishTest_BasicQuestions {
 
     public String mQuestions[]= {
             "Hello",

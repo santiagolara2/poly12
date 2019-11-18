@@ -19,7 +19,7 @@ public class LanguageIntroActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Intent intent = getIntent();
-        String language = intent.getStringExtra(MainActivity.LANGUAGE_NAME);
+        String language = intent.getStringExtra(SelectLanguageActivity.LANGUAGE_NAME);
 
         TextView header = (TextView) findViewById(R.id.header);
         header.setText("Welcome to your first lesson in " + language + "!");

@@ -11,13 +11,13 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class Main3Activity extends AppCompatActivity {
+public class SpanishTest_BasicActivity extends AppCompatActivity {
 
     Button answer1, answer2, answer3, answer4;
 
     TextView score, question;
 
-    private Questions mQuestions = new Questions();
+    private SpanishTest_BasicQuestions mQuestions = new SpanishTest_BasicQuestions();
 
     private String mAnswer;
     private int mScore = 0;
@@ -28,7 +28,7 @@ public class Main3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_test_spanish_basic);
 
         r = new Random();
 
@@ -109,7 +109,7 @@ public class Main3Activity extends AppCompatActivity {
     }
 
     private void gameOver() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Main3Activity.this);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SpanishTest_BasicActivity.this);
         alertDialogBuilder
                 .setMessage("Quiz has finished! Your score is " + mScore + " points.")
                 .setCancelable(false)
@@ -117,7 +117,7 @@ public class Main3Activity extends AppCompatActivity {
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                startActivity(new Intent(getApplicationContext(), Main3Activity.class));
+                                startActivity(new Intent(getApplicationContext(), SpanishTest_BasicActivity.class));
                             }
                         })
                 .setNegativeButton("EXIT",
