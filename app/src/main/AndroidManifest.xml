@@ -10,9 +10,42 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".spanish_lesson6"
+            android:label="@string/title_activity_spanish_lesson6"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".spanish_lesson5"
+            android:label="@string/title_activity_spanish_lesson5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".spanish_lesson4"
+            android:label="@string/title_activity_spanish_lesson4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".spanish_lesson3"
+            android:label="@string/title_activity_spanish_lesson3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".spanish_lesson2"
+            android:label="@string/title_activity_spanish_lesson2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".spanish_lesson1"
+            android:label="@string/title_activity_spanish_lesson1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".spanish_introduction" />
+        <activity
+            android:name=".spanish_introduction_activity"
+            android:label="@string/title_activity_spanish_introduction_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".spanishActivity"
+            android:label="@string/title_activity_spanish"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".LanguageIntroActivity"
             android:label="@string/title_activity_language_intro"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

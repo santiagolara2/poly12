@@ -31,16 +31,21 @@ public class Main2Activity extends AppCompatActivity {
         Button knowLanguage = (Button) findViewById(R.id.knowLanguage);
         knowLanguage.setText("Already know some " + language + "?");
 
-        knowLanguage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openMain3Activity();
-            }
-        });
+//        knowLanguage.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openMain3Activity();
+//            }
+//        });
     }
 
-    public void openMain3Activity() {
-        Intent intent = new Intent(this, Main3Activity.class);
+//    public void openMain3Activity() {
+//        Intent intent = new Intent(this, Main3Activity.class);
+//        startActivity(intent);
+//    }
+
+    public void openMain2Activity() {
+        Intent intent = new Intent(this, contentSpanishHandler.class);
         startActivity(intent);
     }
 }

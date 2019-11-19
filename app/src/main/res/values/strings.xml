@@ -10,5 +10,14 @@
         <item>Português (Portuguese)</item>
     </string-array>
     <string name="title_activity_language_intro">LanguageIntroActivity</string>
+    <string name="title_activity_spanish">spanishActivity</string>
+    <string name="title_activity_spanish_introduction_activity">spanish_introduction_activity
+    </string>
+    <string name="title_activity_spanish_lesson1">spanish_lesson1</string>
+    <string name="title_activity_spanish_lesson2">spanish_lesson2</string>
+    <string name="title_activity_spanish_lesson3">spanish_lesson3</string>
+    <string name="title_activity_spanish_lesson4">spanish_lesson4</string>
+    <string name="title_activity_spanish_lesson5">spanish_lesson5</string>
+    <string name="title_activity_spanish_lesson6">spanish_lesson6</string>
 
 </resources>
