@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import static com.example.santiagolara.poly12.SelectLanguageActivity.LANGUAGE_NAME;
+
 public class AllSignUpActivity extends AppCompatActivity {
     private EditText FName;
     private EditText LName;
@@ -41,6 +43,9 @@ public class AllSignUpActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+        Intent intent = getIntent();
+        final String language = intent.getStringExtra(SelectLanguageActivity.LANGUAGE_NAME);
+
         Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +60,9 @@ public class AllSignUpActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 //Sign in success, udpate UI with the Signin user's info
                                 Toast.makeText(AllSignUpActivity.this, "Registration Success", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(AllSignUpActivity.this, LanguageIntroActivity.class)); //Take user to LessonIntro Page of their choice (future)
+                                Intent intent = new Intent(AllSignUpActivity.this, LanguageIntroActivity.class);
+                                intent.putExtra(LANGUAGE_NAME, language);
+                                startActivity(intent); //Take user to LessonIntro Page of their choice (future)
                             } else {
                                 Toast.makeText(AllSignUpActivity.this, "Registration Fail, please try again", Toast.LENGTH_SHORT).show();
                             }

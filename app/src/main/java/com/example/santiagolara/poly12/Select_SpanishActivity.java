@@ -22,8 +22,7 @@ public class Select_SpanishActivity extends AppCompatActivity {
         newLanguage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Select_SpanishActivity.this, LanguageIntroActivity.class);
-                intent.putExtra(LANGUAGE_NAME, language);
+                Intent intent = new Intent(Select_SpanishActivity.this, AllSignUpActivity.class);
                 startActivity(intent);
             }
         });
@@ -34,12 +33,12 @@ public class Select_SpanishActivity extends AppCompatActivity {
         knowLanguage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openMain3Activity();
+                openBasicSpanishTest();
             }
         });
     }
 
-    public void openMain3Activity() {
+    public void openBasicSpanishTest() {
         Intent intent = new Intent(this, SpanishTest_BasicActivity.class);
         startActivity(intent);
     }

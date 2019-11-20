@@ -9,19 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AllSignUpActivity"></activity>
-        <activity android:name=".GoogleLoginActivity" />
-        <activity
-            android:name=".LanguageIntroActivity"
-            android:label="@string/title_activity_language_intro"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SelectLanguageActivity">
+        <activity android:name=".StartScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AllSignUpActivity" />
+        <activity android:name=".GoogleLoginActivity" />
+        <activity
+            android:name=".LanguageIntroActivity"
+            android:label="@string/title_activity_language_intro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SelectLanguageActivity"></activity>
         <activity android:name=".Select_SpanishActivity" />
         <activity android:name=".SpanishTest_BasicActivity" />
     </application>

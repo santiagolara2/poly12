@@ -47,7 +47,6 @@ public class AllLoginActivity extends AppCompatActivity {
         Login = findViewById(R.id.btLogin);
         UserSignUp = findViewById(R.id.tvUserSignUp);
 
-
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,11 +59,11 @@ public class AllLoginActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
-                            if(!task.isSuccessful()){
+                            if(!task.isSuccessful())
                                 Toast.makeText(AllLoginActivity.this, "Sign In Failed, try again", Toast.LENGTH_SHORT).show();
-                            } else {
+                                else
                                 Toast.makeText(AllLoginActivity.this, "Sign In Successful!", Toast.LENGTH_LONG).show();
-                            }
+
                         }
                     });
                 }
@@ -92,11 +91,10 @@ public class AllLoginActivity extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth){
                 FirebaseUser user = firebaseAuth.getCurrentUser();
-                if(user !=null){
+                if(user !=null)
                     Log.d(TAG, "user signed in");
-                } else {
+                else
                     Log.d(TAG, "user signed out");
-                }
             }
         };
 
@@ -113,4 +111,6 @@ public class AllLoginActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
     }
+
+
 }
